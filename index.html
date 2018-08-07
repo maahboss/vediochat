@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>WCG -- WebRTC Tutorial For Beginners</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    </head>
+    <body>
+        <video id="remoteview" autoplay></video>
+        <video id="selfview" autoplay></video>
+
+        <h4 align="center">This Web is just for show , Developed by: MOhammed HAmada , Hp:0599021162</h4>
+
+        <div align="center">
+            <button type="button" id="btnShowCamera" >Open your Web Cam</button>
+        </div>
+        
+        <br>
+
+        <div class="w3-container" align="center">
+            <h2>Vedio Chat Rooms</h2>
+            
+            <a href="http://localhost:8090/webcam.html" class="w3-button w3-aqua" target="_blank">Room1</a>
+            <a href="http://localhost:8090/webcam2.html" class="w3-button w3-aqua" target="_blank">Room2</a>
+          </div>
+
+        <div align="center">
+            <p style="color:red;">This Website is trial , It just for 2 rooms </p>
+        </div>
+
+
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          var socket = io();
+        </script>
+        <script src="/js/webrtc.demo.js"></script>
+    </body>
+</html>
